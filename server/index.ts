@@ -3,8 +3,8 @@ import express, { Request, Response } from 'express';
 import next from 'next';
 import { createServer } from 'http';
 import mongoose from 'mongoose';
-import userRoutes from './userRoutes';
-import eventRoutes from './eventRoutes'
+import userRoutes from './routes/user';
+import eventRoutes from './routes/event'
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
