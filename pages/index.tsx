@@ -1,6 +1,6 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-export default function Home() {
+const Home = () => {
   return (
     <ul>
       <li>
@@ -14,5 +14,7 @@ export default function Home() {
         </Link>
       </li>
     </ul>
-  )
-}
+  );
+};
+
+export default Home;
