@@ -1,10 +1,7 @@
-// tailwind.config.js
+// postcss.config.js
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
   },
-  variants: {},
-  plugins: [],
 };
