@@ -5,6 +5,10 @@
     "jsx": "preserve",
     "lib": ["dom", "es2017"],
     "baseUrl": ".",
+    "paths": {
+      "@/interfaces/*": ["interfaces/*"],
+      "@/models/*": ["models/*"],
+    },
     "moduleResolution": "node",
     "strict": true,
     "allowJs": true,
