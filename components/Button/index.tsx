@@ -1,5 +1,6 @@
 type ButtonProps = {
   type: string;
+  label: string;
   border?: boolean;
   flat?: boolean;
   disabled?: boolean;
@@ -7,7 +8,6 @@ type ButtonProps = {
   relief?: boolean;
   round?: boolean;
   icon?: string;
-  label: string;
   className?: string;
 };
 
