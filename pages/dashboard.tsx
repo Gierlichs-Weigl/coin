@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-const dashboard: NextPage = () => {
+const Dashboard: NextPage = () => {
   return (
     <>
       <h1 className="text-center py-4 text-2xl">DASHBOARD</h1>
@@ -8,4 +8,4 @@ const dashboard: NextPage = () => {
   );
 };
 
-export default dashboard;
+export default Dashboard;

@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 
-const events: NextPage = () => {
+const Events: NextPage = () => {
   return (
     <>
       <h1 className="text-center py-4 text-2xl">EVENTS</h1>
@@ -8,4 +8,4 @@ const events: NextPage = () => {
   );
 };
 
-export default events;
+export default Events;
