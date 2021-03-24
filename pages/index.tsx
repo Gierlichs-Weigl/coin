@@ -23,6 +23,7 @@ const Home = ({ article, showImage }: Props): JSX.Element => {
 
   return (
     <div className="w-full mx-auto">
+      <h1 className="text-center py-4 text-2xl">HOME</h1>
       <div className="h-screen flex items-center">
         <figure className="lg:flex bg-gray-200 rounded-xl p-8 lg:p-4">
           {Image}
