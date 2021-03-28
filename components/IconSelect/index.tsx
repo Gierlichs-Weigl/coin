@@ -6,7 +6,7 @@ type SelectProps = {
 };
 
 const IconSelect: FunctionComponent<SelectProps> = ({ children, className }) => {
-  return <div className={`${className} p-4 border border-gray-500`}>{children}</div>;
+  return <li className={`${className} p-4 border border-gray-500`}>{children}</li>;
 };
 
 export default IconSelect;
