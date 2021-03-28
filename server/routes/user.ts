@@ -1,18 +1,23 @@
-import { Router } from 'express';
-import { UserInterface } from '@/interfaces/index';
-import User from '../../models/user'; //TODO: FIX MY ABSOLUTE PATH
+import {Router} from 'express';
+// import { ExistingUser } from '../../interfaces';
+// import User from '../models/User';
+// import { hash, compare } from 'bcrypt';
+// import { sign } from 'jsonwebtoken';
+// import cookie from 'cookie';
 
 const userRoutes = Router();
 
-userRoutes.get('/', async (_, res) => {
-  try {
-    const user: UserInterface[] = await User.find({});
 
-    console.log('USER', user);
-  } catch (error) {
-    console.log('error');
-    res.status(500).send(error);
-  }
+//
+// -- get --
+//
+
+
+userRoutes.get('/', async (_, res) => {
+        res.send({message: 'HELLOW ORLD'}).json()
 });
 
-export default userRoutes;
+
+
+
+export default userRoutes
