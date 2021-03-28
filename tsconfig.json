@@ -8,7 +8,6 @@
     "paths": {
       "@/interfaces/*": ["interfaces/*"],
       "@/models/*": ["models/*"],
-      "@/utils/*": ["utils/*"]
     },
     "moduleResolution": "node",
     "strict": true,

@@ -13,8 +13,8 @@ const userRoutes = Router();
 //
 
 
-userRoutes.get('/', async (_, res) => {
-        res.send({message: 'HELLOW ORLD'}).json()
+userRoutes.get('/:user_id', async (_, res) => {
+        res.send({message: 'HELLOWorld'}).json()
 });
 
 

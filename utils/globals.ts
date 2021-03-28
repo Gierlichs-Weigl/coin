@@ -1,3 +1,5 @@
 import { useWindowDimensons } from './hooks';
 
-export const isMobile = window?.document ? useWindowDimensons().width < 600 : false;
+export const isBrowser =  typeof window !== "undefined"
+
+export const isDesktop = (): boolean => isBrowser ? useWindowDimensons()?.width > 678 : false
