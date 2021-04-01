@@ -1,22 +1,25 @@
 import { GetServerSideProps } from 'next';
 
 interface Props {
-  currenUser?: any; // Check any
+  currentUserData?: { message: string };
+  userID: string;
 }
 
-const UserProfile = (props: Props): JSX.Element => {
-  console.log({ props });
+const UserProfile = ({ currentUserData, userID }: Props): JSX.Element => {
+  console.log(currentUserData);
 
-  return <div>{/* <pre>{user_id}</pre> */}</div>;
+  return <div>{userID}</div>;
 };
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const currentUser = await fetch(`http://localhost:3000/api/user/${params?.user_id}`);
 
+  //Do we set types here aswell?
   const currentUserData = await currentUser.json();
+  const userID = params?.user_id;
 
   return {
-    props: { currentUserData }, // will be passed to the page component as props
+    props: { currentUserData, userID },
   };
 };
 
