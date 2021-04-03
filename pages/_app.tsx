@@ -15,7 +15,9 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <title>Constellators International</title>
       </Head>
       <DynamicHeader />
-      <Component {...pageProps} />
+      <div className="mx-2 my-2">
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }
