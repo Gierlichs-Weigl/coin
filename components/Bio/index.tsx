@@ -1,4 +1,4 @@
-const Bio: React.FC = (): JSX.Element => {
+const Bio: React.FC = () => {
   return (
     <>
       <h2 className="text-2xl">Biography</h2>

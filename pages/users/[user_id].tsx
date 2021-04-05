@@ -10,7 +10,7 @@ interface Props {
   randomUserData: RandomUser;
 }
 
-const UserProfile: React.FC<Props> = ({ currentUserData, userID, randomUserData }): JSX.Element => {
+const UserProfile: React.FC<Props> = ({ currentUserData, userID, randomUserData }) => {
   const loggedIn = true;
   return (
     <>

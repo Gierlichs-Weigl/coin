@@ -1,4 +1,4 @@
-const Contact: React.FC = (): JSX.Element => {
+const Contact: React.FC = () => {
   return (
     <>
       <h2 className="text-2xl">Contact</h2>

@@ -5,7 +5,7 @@ interface Props {
   randomUserData: RandomUser;
 }
 
-const Profile: React.FC<Props> = ({ randomUserData }): JSX.Element => {
+const Profile: React.FC<Props> = ({ randomUserData }) => {
   const user = randomUserData.results[0];
 
   return (
